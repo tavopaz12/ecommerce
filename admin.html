@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADMIN | CATAR</title>
+    <script
+      src="https://kit.fontawesome.com/26b8304cd1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/style/admin.css" />
+    <link rel="stylesheet" href="./assets/style/dashboard.css" />
+    <link rel="stylesheet" href="./assets/style/reset.css" />
+  </head>
+
+  <body>
+    <main>
+      <header class="header__dasboard">
+        <i class="fa fa-bell" aria-hidden="true"></i>
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <a href="./index.html"
+          ><span class="name__admin"
+            >Regresar
+            <i class="fa fa-user-circle" aria-hidden="true"></i>
+          </span>
+        </a>
+      </header>
+
+      <section class="container__form">
+        <form action="" class="form__add__product">
+          <h1 class="container__form__title">Agregar nuevo producto</h1>
+
+          <label for="" class="container__form__label">
+            <span>Titulo</span>
+            <input
+              data-title
+              required
+              type="text"
+              name=""
+              id=""
+              placeholder="Ingrese el nombre del producto"
+            />
+          </label>
+          <br />
+
+          <label for="" class="container__form__label">
+            <span>Seleccionar Categoria</span>
+            <br />
+            <select name="" id="" required data-category>
+              <option value="" selected disabled>
+                --Seleccionar Categoria--
+              </option>
+              <option value="Calzado">Calzado</option>
+              <option value="Accesorios">Accesorios</option>
+              <option value="Ropa Deportiva">Ropa deportiva</option>
+              <option value="Balon Catar-2022">Balon catar 2022</option>
+              <option value="Seleccion Nacional de Mexico">
+                Seleccion Nacional de Mexico
+              </option>
+            </select>
+          </label>
+          <br />
+          <br />
+
+          <label for="" class="container__form__label">
+            <span>Seleccionar Imagen</span>
+            <input data-file type="file" name="" id="" required />
+          </label>
+          <br />
+
+          <label for="" class="container__form__label">
+            <span>Precio</span>
+            <input
+              data-price
+              required
+              type="number"
+              name=""
+              id=""
+              placeholder="Ingrese el precio del producto"
+            />
+          </label>
+          <br />
+
+          <label for="" class="container__form__label">
+            <span>Descripcion</span>
+            <input
+              data-description
+              required
+              type="text"
+              name=""
+              id=""
+              placeholder="Agregue una descripcion al producto"
+            />
+          </label>
+          <br />
+
+          <button class="container__form__addProduct">Agregar Producto</button>
+        </form>
+      </section>
+
+      <section class="container__products">
+        <table class="container__products__table">
+          <thead class="container__products__table__header">
+            <tr>
+              <th>Imagen</th>
+              <th>ID</th>
+              <th>Categoria</th>
+              <th>Titulo</th>
+              <th>Precio</th>
+              <th>Descripcion</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody class="container__products__table__body"></tbody>
+        </table>
+      </section>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+      integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="./controller/product.controller.js"></script>
+    <script type="module" src="./controller/create.controller.js"></script>
+  </body>
+</html>

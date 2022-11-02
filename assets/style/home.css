@@ -1,0 +1,168 @@
+body {
+  background: url("../images/bg4.jpg");
+  background-position: center;
+  background-size: auto;
+}
+
+:root {
+  --doha-blue: #63a194;
+  --doha-white: #ffffff;
+  --doha-crema: #e1c396;
+  --doha-beige: #b09677;
+  --doha-beigeBold: #8b7559;
+  --doha-purple: #8d1c3d;
+}
+
+.header__container {
+  height: 10vh;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  color: black;
+  border-bottom: 1px solid var(--doha-beige);
+  background-color: var(--doha-white);
+}
+
+.header__container img {
+  width: 10rem;
+  margin-top: -0.5rem;
+  height: 5rem;
+}
+
+.header__container__search {
+  margin-top: 1rem;
+}
+
+.header__container__search .input__serach {
+  width: 40vw;
+  padding: 0.4rem;
+}
+
+.header__container__search .fa-magnifying-glass {
+  position: relative;
+  color: rgb(104, 100, 100);
+  transform: translateX(-1.8rem);
+}
+
+.header__container__tools {
+  margin-top: 1.3rem;
+}
+
+.header__container__tools a {
+  text-decoration: none;
+  color: black;
+}
+
+.header__container__tools i {
+  margin-right: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.header__container__tools i:hover {
+  color: var(--doha-purple);
+}
+
+.nav__menu {
+  background-color: var(--doha-beigeBold);
+  font-weight: bold;
+  color: var(--doha-white);
+  border-bottom: 2px solid var(--doha-white);
+}
+
+.nav__menu__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nav__menu__list li:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.nav__menu__list__title {
+  padding-right: 3rem;
+}
+
+.nav__menu__list__border {
+  border-right: 2px solid var(--doha-white);
+  font-size: 1.5rem;
+}
+
+.banner__container__img {
+  background-color: black;
+  background: url("../images/FA-BannerBuenF0-1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+.cards__section {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 3rem;
+}
+
+.card__article {
+  background-color: white;
+  margin-top: 2rem;
+  padding: 0.5rem;
+  border: 4px solid var(--doha-beige);
+}
+
+.card__article__image {
+  border-bottom: 2px solid var(--doha-beige);
+  margin-bottom: 1rem;
+}
+
+.card__article__image img {
+  width: 25vw;
+}
+
+.card__article__title {
+  margin-bottom: 1.3rem;
+  font-size: 1.1rem;
+  text-align: justify;
+  font-weight: bold;
+  width: 25vw;
+  text-transform: uppercase;
+  color: #68563b;
+}
+
+.card__article__marca {
+  margin-bottom: 1.3rem;
+  font-size: 1rem;
+  color: grey;
+  text-transform: uppercase;
+}
+
+.card__article__portapie {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__article__portapie__price {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.card__article__portapie__btn {
+  background-color: transparent;
+  outline: none;
+  font-size: 0.93rem;
+  letter-spacing: 0.1rem;
+  border: none;
+  font-weight: 900;
+  color: #189278;
+}
+
+.card__article__portapie__btn:hover {
+  cursor: pointer;
+  color: var(--doha-purple);
+}

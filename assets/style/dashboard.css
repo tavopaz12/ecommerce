@@ -1,0 +1,124 @@
+:root {
+  --doha-blue: #63a194;
+  --doha-white: #ffffff;
+  --doha-crema: #e1c396;
+  --doha-beige: #b09677;
+  --doha-beigeBold: #8b7559;
+  --doha-purple: #8d1c3d;
+}
+
+.header__dasboard {
+  background-color: var(--doha-purple);
+  color: #ffffff;
+  text-align: right;
+  padding: 1.2rem;
+  margin-bottom: 2rem;
+  position: sticky;
+  top: 0;
+}
+
+.header__dasboard a {
+  color: white;
+  text-decoration: none;
+}
+
+.header__dasboard .fa-envelope,
+.fa-bell,
+.name__admin {
+  margin-left: 1.4rem;
+}
+
+.container__form {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.container__form__label input,
+select {
+  width: 100%;
+  margin-bottom: 1.1rem;
+  margin-top: 0.3rem;
+  padding: 0.2rem;
+}
+
+.container__form__addProduct {
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.container__form__title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+}
+
+.container__products__table {
+  width: 95%;
+  border-collapse: collapse;
+  margin: 50px auto;
+}
+
+.container__products__table tr:nth-of-type(odd) {
+  background: #eee;
+}
+
+.container__products__table th {
+  background: #3498db;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.container__products__table td {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.container__products__table__actions {
+  display: flex;
+  justify-content: center;
+}
+
+.container__products__table__actions i {
+  color: red;
+  margin-left: 1rem;
+  margin-top: 0.2rem;
+  cursor: pointer;
+}
+
+.container__products__table__actions button {
+  background-color: #3498db;
+  outline: none;
+  border: none;
+  border-radius: 0.4rem;
+  color: white;
+  font-weight: bold;
+  width: 4rem;
+  padding: 0.2rem;
+  cursor: pointer;
+}
+
+.container__form__addProduct {
+  background-color: var(--doha-purple);
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.container__form__label span {
+  color: rgb(99, 96, 96);
+  font-weight: bold;
+}
+
+.imagenPrevisualizacion {
+  width: 8rem;
+  margin: 0 auto;
+}
